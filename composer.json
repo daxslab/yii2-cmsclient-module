@@ -1,0 +1,21 @@
+{
+    "name": "daxslab/yii2-cmsclient-module",
+    "description": "Yii2 client module to interact with sites.daxslab.com.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," facebook"," comments"," "],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel A. López López",
+            "email": "glpz@daxslab.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "daxslab\\cmsclient\\": ""
+        }
+    }
+}
