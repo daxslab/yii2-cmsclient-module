@@ -1,10 +1,10 @@
 Yii2 CMS Client
 ===============
 
-[![Latest Stable Version](https://poser.pugx.org/daxslab/yii2-cmsclient-widget/v/stable.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-widget)
-[![Total Downloads](https://poser.pugx.org/daxslab/yii2-cmsclient-widget/downloads)](https://packagist.org/packages/daxslab/yii2-cmsclient-widget)
-[![Latest Unstable Version](https://poser.pugx.org/daxslab/yii2-cmsclient-widget/v/unstable.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-widget)
-[![License](https://poser.pugx.org/daxslab/yii2-cmsclient-widget/license.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-widget)
+[![Latest Stable Version](https://poser.pugx.org/daxslab/yii2-cmsclient-module/v/stable.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-module)
+[![Total Downloads](https://poser.pugx.org/daxslab/yii2-cmsclient-module/downloads)](https://packagist.org/packages/daxslab/yii2-cmsclient-module)
+[![Latest Unstable Version](https://poser.pugx.org/daxslab/yii2-cmsclient-module/v/unstable.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-module)
+[![License](https://poser.pugx.org/daxslab/yii2-cmsclient-module/license.svg)](https://packagist.org/packages/daxslab/yii2-cmsclient-module)
 
 Yii2 client module to interact with http://sites.daxslab.com service
 
@@ -16,13 +16,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist daxslab/yii2-cmsclient-widget "*"
+php composer.phar require --prefer-dist daxslab/yii2-cmsclient-module "*"
 ```
 
 or add
 
 ```
-"daxslab/yii2-cmsclient-widget": "*"
+"daxslab/yii2-cmsclient-module": "*"
 ```
 
 to the require section of your `composer.json` file.
