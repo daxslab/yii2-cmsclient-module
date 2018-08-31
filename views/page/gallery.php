@@ -6,6 +6,7 @@ use yii\helpers\Html;
 
 $this->title = $model['title'];
 $this->description = $model['abstract'];
+$this->image = $model['image'];
 
 $columns = 3;
 $divided = 12 / $columns;
