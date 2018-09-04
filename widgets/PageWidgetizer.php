@@ -9,6 +9,7 @@
 namespace daxslab\cmsclient\widgets;
 
 
+use yii\base\Exception;
 use yii\base\Widget;
 use DOMDocument;
 use yii\helpers\HtmlPurifier;
@@ -40,7 +41,7 @@ class PageWidgetizer extends Widget
 
             try{
                 $widget = $this->node2Widget($node);
-            }catch (\ErrorException $e){
+            }catch (Exception $e){
                 $widget = Html::tag('div', $e->getMessage(), ['class' => 'alert alert-danger']);
             }
 
@@ -54,7 +55,7 @@ class PageWidgetizer extends Widget
     {
         $className = $node->getAttribute('classname');
         if(!class_exists($className)){
-            throw new \ErrorException('Component not supported');
+            throw new Exception('Component not supported');
         }
 
         $config = [

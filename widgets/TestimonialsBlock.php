@@ -10,6 +10,7 @@ namespace daxslab\cmsclient\widgets;
 
 use Yii;
 use yii\base\ErrorException;
+use yii\base\Exception;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
 
