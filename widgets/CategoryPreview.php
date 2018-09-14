@@ -23,6 +23,7 @@ class CategoryPreview extends CMSWidget
     {
         $page = $this->getPage($this->page);
 
+
         $dataProvider = new ArrayDataProvider([
             'allModels' => Yii::$app->cmsClient->getContentChildren($this->page, $this->items),
         ]);

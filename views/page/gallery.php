@@ -1,8 +1,6 @@
 <?php
 
 use daxslab\cmsclient\widgets\PageWidgetizer;
-use \yii\widgets\ListView;
-use yii\helpers\Html;
 
 $this->title = $model['title'];
 $this->description = $model['abstract'];
@@ -30,17 +28,30 @@ $columnClass = "col-md-{$divided}";
 
     <?php if ($dataProvider->totalCount): ?>
         <section class="subpages">
-            <?= ListView::widget([
-                'dataProvider' => $dataProvider,
-                'layout' => '<div class="row">{items}</div>',
-                'options' => ['class' => 'container'],
-                'itemOptions' => ['tag' => false],
-                'itemView' => $itemView,
-                'viewParams' => [
-                    'columns' => $columns,
-                    'columnClass' => $columnClass,
-                ]
-            ]) ?>
+            <!--            //= \yii\widgets\ListView::widget([
+            //                'dataProvider' => $dataProvider,
+            //                'layout' => '<div class="row">{items}</div>',
+            //                'options' => ['class' => 'container'],
+            //                'itemOptions' => ['tag' => false],
+            //                'itemView' => $itemView,
+            //                'viewParams' => [
+            //                    'columns' => $columns,
+            //                    'columnClass' => $columnClass,
+            //                ]
+            //            ]) ?> -->
+
+            <div class="container">
+                <?=
+                \daxslab\cmsclient\widgets\Gallery::widget([
+                    'page' => $model['slug'],
+                    'items' => null,
+                    'columns' => 3,
+                    'spacing' => true,
+                    'thumbnailWidth' => 640,
+                    'thumbnailHeight' => 480,
+                ])
+                ?>
+            </div>
         </section>
     <?php endif; ?>
 
